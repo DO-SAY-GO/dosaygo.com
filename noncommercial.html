@@ -1,31 +1,67 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BrowserBox Activation</title>
-<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-<stripe-pricing-table pricing-table-id="prctbl_1R1ARNBKxtsqOlor8zu2Gt95"
-publishable-key="pk_live_519b8xgBKxtsqOloreQVhWpxIYVYN4FGyf60PLrQUHPGCFxW42ovujJ9n1qzduTAE06uOvHwshX7Gd7P4S3kk5APM00v8ZFDc73">
-</stripe-pricing-table>
-<script>
-  const url = new URL(location.href);
-  const cri = url.searchParams.get('cri');
-  const seats = url.searchParams.get('quantity');
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BrowserBox non-commercial licensing for public sector and non-profit teams. Clientless RBI with 60 FPS streaming.">
+  <title>BrowserBox Non-Commercial License</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="stylesheet" href="style.css">
+  <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+</head>
+<body class="subpage">
+  <nav class="home-nav">
+    <div class="brand">
+      <img src="logo.svg" alt="BrowserBox Logo">
+      <span>BrowserBox</span>
+    </div>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/index.html#get-started">Get Started</a></li>
+      <li><a href="/index.html#features">Features</a></li>
+      <li><a href="/index.html#compliance">Compliance</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="https://browserbox.io/evaluate" class="cta primary">Start Eval</a>
+    </div>
+  </nav>
 
-  if (cri) {
-    document.currentScript.previousElementSibling.setAttribute('client-reference-id', cri);
-    fetch('/api/license-visit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ cri })
-    })
-    .then(response => {
-      if (!response.ok) console.warn('Ping failed:', response.status);
-    })
-    .catch(error => console.warn('Ping error:', error));
+  <main class="sub-wrap">
+    <section class="sub-hero">
+      <div class="kicker">Non-Commercial License</div>
+      <h1>Affordable licensing for non-profits and public sector teams</h1>
+      <p>Non-commercial licensing keeps BrowserBox accessible for mission-driven organizations while funding ongoing development.</p>
+      <div class="cta-row">
+        <a href="/commerce.html" class="cta secondary">Commercial Licensing</a>
+        <a href="mailto:sales@dosaygo.com" class="cta secondary">Talk to Sales</a>
+      </div>
+    </section>
 
-    // Show alert if quantity is present and not 1 (default)
-    if (seats && seats !== '1') {
-      alert(`\n⚠️ Error selecting ${seats} seats!\n\n\tPlease manually select your subscription, then:
+    <section class="panel stripe-panel">
+      <h2>Non-commercial pricing</h2>
+      <p class="meta">Seats are concurrent users. Adjust quantity before entering card details.</p>
+      <stripe-pricing-table pricing-table-id="prctbl_1R1ARNBKxtsqOlor8zu2Gt95"
+        publishable-key="pk_live_519b8xgBKxtsqOloreQVhWpxIYVYN4FGyf60PLrQUHPGCFxW42ovujJ9n1qzduTAE06uOvHwshX7Gd7P4S3kk5APM00v8ZFDc73">
+      </stripe-pricing-table>
+      <script>
+        const url = new URL(location.href);
+        const cri = url.searchParams.get('cri');
+        const seats = url.searchParams.get('quantity');
+
+        if (cri) {
+          document.currentScript.previousElementSibling.setAttribute('client-reference-id', cri);
+          fetch('/api/license-visit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ cri })
+          })
+          .then(response => {
+            if (!response.ok) console.warn('Ping failed:', response.status);
+          })
+          .catch(error => console.warn('Ping error:', error));
+
+          if (seats && seats !== '1') {
+            alert(`\nWARNING: Error selecting ${seats} seats!\n\n\tPlease manually select your subscription, then:
 
           1. Tap Subscribe.
           2. Adjust the Qty to ${seats} seats.
@@ -33,6 +69,26 @@ publishable-key="pk_live_519b8xgBKxtsqOloreQVhWpxIYVYN4FGyf60PLrQUHPGCFxW42ovujJ
       Do this BEFORE you enter your card details to buy.
 
       `);
-    }
-  }
-</script>
+          }
+        }
+      </script>
+    </section>
+
+    <section class="panel">
+      <h2>Questions?</h2>
+      <p>Email <a href="mailto:sales@dosaygo.com">sales@dosaygo.com</a> to confirm eligibility or request assistance.</p>
+      <p class="meta">Commercial product. A valid license is required for all use, including development and evaluation.</p>
+    </section>
+  </main>
+
+  <footer class="home-footer">
+    <div class="footer-links">
+      <a href="https://dosaygo.com/privacy.txt.html">Privacy Policy</a>
+      <a href="https://dosaygo.com/terms.txt.html">Terms of Service</a>
+      <a href="https://github.com/BrowserBox/BrowserBox">GitHub</a>
+      <a href="mailto:sales@dosaygo.com">sales@dosaygo.com</a>
+    </div>
+    <p>(c) 2025 DOSAYGO Corporation USA. All rights reserved.</p>
+  </footer>
+</body>
+</html>

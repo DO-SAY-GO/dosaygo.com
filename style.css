@@ -1,3 +1,5 @@
+    @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap");
+
     * {
       margin: 0;
       padding: 0;
@@ -282,6 +284,10 @@
       color: #007ea7; /* Link hover color from main theme */
       text-decoration: underline;
     }
+    .home .downloadnet-footer {
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
     @media screen and (max-width: 600px) {
       nav {
         padding: 1rem;
@@ -317,4 +323,385 @@
       background: #007ea7; /* Fill with theme blue on hover */
       color: #fff; /* White text for contrast on blue background */
       border-color: #007ea7; /* Keep border color consistent on hover */
+    }
+
+    /* Home page redesign */
+    .home {
+      background: radial-gradient(circle at top left, #1a2230 0%, #0b0f14 55%);
+      color: #e7eef7;
+      font-family: "Space Grotesk", "Avenir Next", sans-serif;
+    }
+
+    .home * {
+      font-family: "Space Grotesk", "Avenir Next", sans-serif;
+    }
+
+    .home a {
+      color: inherit;
+    }
+
+    .home-nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 2rem;
+      background: rgba(11, 15, 20, 0.92);
+      border-bottom: 1px solid #223042;
+      box-shadow: none;
+      backdrop-filter: blur(14px);
+    }
+
+    .home-nav .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .home-nav img {
+      width: 38px;
+      height: 38px;
+    }
+
+    .home-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.6rem;
+    }
+
+    .home-nav ul a {
+      color: #cdd9ea;
+      font-weight: 500;
+    }
+
+    .home-nav ul a:hover {
+      color: #ffb000;
+    }
+
+    .nav-cta {
+      margin-left: 1rem;
+    }
+
+    .home-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+      align-items: center;
+      padding: 32px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(21, 28, 38, 0.92), rgba(21, 28, 38, 0.6));
+      border: 1px solid #263244;
+      box-shadow: 0 18px 42px rgba(5, 10, 18, 0.6);
+    }
+
+    .kicker {
+      color: #2dd4bf;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.75rem;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      background: rgba(255, 176, 0, 0.12);
+      color: #ffb000;
+      border: 1px solid rgba(255, 176, 0, 0.35);
+      margin-bottom: 12px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+      line-height: 1.05;
+      margin: 0.6rem 0 1rem;
+      color: #f7f9fc;
+    }
+
+    .hero p {
+      color: #9fb0c6;
+      font-size: 1.05rem;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      border-radius: 12px;
+      border: 1px solid transparent;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+    }
+
+    .cta.primary {
+      background: #ffb000;
+      color: #1b1b1b;
+      box-shadow: 0 12px 24px rgba(255, 176, 0, 0.22);
+    }
+
+    .cta.secondary {
+      background: transparent;
+      border: 1px solid #263244;
+      color: #e7eef7;
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+    }
+
+    .section {
+      margin-top: 48px;
+    }
+
+    .home .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 20px;
+    }
+
+    .home .card {
+      background: #151c26;
+      border: 1px solid #263244;
+      box-shadow: none;
+      text-align: left;
+    }
+
+    .home .card strong {
+      color: #f7f9fc;
+      font-weight: 600;
+    }
+
+    .home .card p {
+      color: #9fb0c6;
+      margin-top: 10px;
+    }
+
+    .list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #263244;
+      color: #9fb0c6;
+    }
+
+    .list li:last-child {
+      border-bottom: none;
+    }
+
+    .meta {
+      color: #9fb0c6;
+      font-size: 0.95rem;
+    }
+
+    .mono {
+      font-family: "IBM Plex Mono", "Fira Code", ui-monospace, monospace;
+      font-size: 0.95rem;
+    }
+
+    .notice {
+      margin-top: 20px;
+      padding: 14px 18px;
+      border-radius: 12px;
+      border: 1px solid rgba(45, 212, 191, 0.4);
+      background: rgba(45, 212, 191, 0.12);
+      color: #e7eef7;
+    }
+
+    .home figure {
+      margin: 0;
+    }
+
+    .home figcaption {
+      margin-top: 10px;
+      color: #9fb0c6;
+      font-size: 0.95rem;
+    }
+
+    .home-footer {
+      padding: 32px 24px 48px;
+      text-align: center;
+      border-top: 1px solid #223042;
+      color: #9fb0c6;
+    }
+
+    .home-footer .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .home-footer a {
+      color: #cdd9ea;
+    }
+
+    .home-footer a:hover {
+      color: #ffb000;
+    }
+
+    @media (max-width: 920px) {
+      .home-nav {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .home-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .home-wrap {
+        padding: 32px 18px 60px;
+      }
+
+      .hero {
+        padding: 24px;
+      }
+
+      .cta {
+        width: 100%;
+      }
+    }
+
+    .subpage {
+      background: radial-gradient(circle at top left, #1a2230 0%, #0b0f14 55%);
+      color: #e7eef7;
+      font-family: "Space Grotesk", "Avenir Next", sans-serif;
+    }
+
+    .subpage * {
+      font-family: "Space Grotesk", "Avenir Next", sans-serif;
+    }
+
+    .subpage a {
+      color: inherit;
+    }
+
+    .sub-wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .sub-hero {
+      padding: 28px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(21, 28, 38, 0.92), rgba(21, 28, 38, 0.6));
+      border: 1px solid #263244;
+      margin-bottom: 32px;
+    }
+
+    .sub-hero h1 {
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      margin-bottom: 12px;
+    }
+
+    .sub-hero p {
+      color: #9fb0c6;
+      max-width: 760px;
+    }
+
+    .panel {
+      background: #151c26;
+      border: 1px solid #263244;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .panel h2 {
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+    }
+
+    .panel p,
+    .panel li,
+    .panel dd {
+      color: #9fb0c6;
+    }
+
+    .panel ul {
+      padding-left: 20px;
+    }
+
+    .panel a:hover {
+      color: #ffb000;
+    }
+
+    .stripe-panel stripe-pricing-table {
+      display: block;
+      margin-top: 16px;
+    }
+
+    .legal-content h2 {
+      margin-top: 16px;
+    }
+
+    .legal-content p,
+    .legal-content li {
+      margin-top: 10px;
+    }
+
+    @media (max-width: 720px) {
+      .sub-wrap {
+        padding: 32px 18px 60px;
+      }
+    }
+
+    .home section,
+    .subpage section {
+      padding: 0;
+      text-align: left;
+    }
+
+    .subpage .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 20px;
+    }
+
+    .subpage .card {
+      background: #151c26;
+      border: 1px solid #263244;
+      box-shadow: none;
+      text-align: left;
+      padding: 20px;
+      border-radius: 16px;
+    }
+
+    .subpage .card p {
+      color: #9fb0c6;
+      margin-top: 10px;
     }
