@@ -1,5 +1,17 @@
     @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap");
 
+    :root {
+      --fluoro: #dfff00;
+      --fluoro-glow: rgba(223, 255, 0, 0.24);
+      --aqua: #7fffd4;
+      --dodger: #1e90ff;
+      --ink: #0b0f14;
+      --panel: #151c26;
+      --panel-border: #263244;
+      --text: #e7eef7;
+      --muted: #9fb0c6;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -47,7 +59,7 @@
       transition: color 0.3s ease;
     }
     nav ul li a:hover {
-      color: #00a3cc;
+      color: var(--aqua);
     }
     nav > div {
       display: flex;
@@ -75,13 +87,13 @@
     }
     .dropdown-content a:hover {
       background: #1a2a44;
-      color: #00a3cc;
+      color: var(--fluoro);
     }
     .dropdown:hover .dropdown-content {
       display: block;
     }
     header {
-      background: linear-gradient(135deg, #0f1c33 30%, #007ea7 100%);
+      background: linear-gradient(135deg, #0b0f14 20%, #1e90ff 70%, #7fffd4 100%);
       color: #fff;
       text-align: center;
       padding: 7rem 3rem 5rem;
@@ -101,8 +113,8 @@
     }
     .cta-button {
       display: inline-block;
-      background: #e63946;
-      color: #fff;
+      background: var(--fluoro);
+      color: #1b1b1b;
       padding: 1rem 2.5rem;
       border-radius: 6px;
       text-decoration: none;
@@ -113,17 +125,17 @@
       z-index: 2; /* Ensure button text is above stretched link pseudo-element */
     }
     .cta-button:hover {
-      background: #f25f5c;
+      background: #c8f000;
       transform: translateY(-2px);
     }
     .secondary-cta {
       background: transparent;
-      color: #fff;
-      border: 2px solid #fff;
+      color: var(--text);
+      border: 2px solid var(--aqua);
     }
     .secondary-cta:hover {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: #00a3cc;
+      background: rgba(127, 255, 212, 0.12);
+      border-color: var(--fluoro);
       transform: translateY(-2px);
     }
     section {
@@ -150,13 +162,13 @@
       color: #4a4a4a;
     }
     #intro a, #license a, #license-faq a, #capabilities a, #community a, #solutions a {
-      color: #007ea7;
+      color: var(--dodger);
       text-decoration: none;
       font-weight: 600;
       transition: color 0.3s ease;
     }
     #intro a:hover, #license a:hover, #license-faq a:hover, #capabilities a:hover, #community a:hover, #solutions a:hover {
-      color: #00a3cc;
+      color: var(--fluoro);
     }
     #features {
       background: #eef2f5;
@@ -233,7 +245,7 @@
       color: #0f1c33;
       margin-bottom: 0.75rem;
       padding-left: 1rem;
-      border-left: 4px solid #007ea7;
+      border-left: 4px solid var(--dodger);
     }
     #license-faq dd {
       font-size: 1rem;
@@ -254,19 +266,19 @@
       margin-bottom: 1.5rem;
     }
     .footer-links a {
-      color: #00a3cc;
+      color: var(--dodger);
       text-decoration: none;
       margin: 0 1.5rem;
       font-weight: 500;
       transition: color 0.3s ease;
     }
     .footer-links a:hover {
-      color: #fff;
+      color: var(--fluoro);
     }
     /* DownloadNet Footer Section Style */
     .downloadnet-footer {
-      background-color: #ffd700; /* Gold yellow */
-      color: #0f1c33; /* Dark blue text for contrast */
+      background-color: var(--fluoro);
+      color: #0f1c33;
       padding: 1.5rem 2rem;
       text-align: center;
     }
@@ -281,7 +293,7 @@
       transition: color 0.3s ease;
     }
     .downloadnet-footer a:hover {
-      color: #007ea7; /* Link hover color from main theme */
+      color: var(--dodger);
       text-decoration: underline;
     }
     .home .downloadnet-footer {
@@ -314,21 +326,21 @@
     }
     /* Styles for .secondary-cta when inside a .card (which has a light background) */
     .card .secondary-cta {
-      color: #007ea7; /* Theme blue for text */
-      border: 2px solid #007ea7; /* Theme blue for border */
+      color: var(--dodger);
+      border: 2px solid var(--dodger);
       background: transparent; /* Ensure it's transparent by default */
     }
 
     .card .secondary-cta:hover {
-      background: #007ea7; /* Fill with theme blue on hover */
+      background: var(--dodger);
       color: #fff; /* White text for contrast on blue background */
-      border-color: #007ea7; /* Keep border color consistent on hover */
+      border-color: var(--dodger);
     }
 
     /* Home page redesign */
     .home {
       background: radial-gradient(circle at top left, #1a2230 0%, #0b0f14 55%);
-      color: #e7eef7;
+      color: var(--text);
       font-family: "Space Grotesk", "Avenir Next", sans-serif;
     }
 
@@ -379,7 +391,7 @@
     }
 
     .home-nav ul a:hover {
-      color: #ffb000;
+      color: var(--fluoro);
     }
 
     .nav-cta {
@@ -400,12 +412,12 @@
       padding: 32px;
       border-radius: 24px;
       background: linear-gradient(135deg, rgba(21, 28, 38, 0.92), rgba(21, 28, 38, 0.6));
-      border: 1px solid #263244;
+      border: 1px solid var(--panel-border);
       box-shadow: 0 18px 42px rgba(5, 10, 18, 0.6);
     }
 
     .kicker {
-      color: #2dd4bf;
+      color: var(--aqua);
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.08em;
@@ -419,9 +431,9 @@
       padding: 6px 12px;
       border-radius: 999px;
       font-size: 0.82rem;
-      background: rgba(255, 176, 0, 0.12);
-      color: #ffb000;
-      border: 1px solid rgba(255, 176, 0, 0.35);
+      background: rgba(223, 255, 0, 0.14);
+      color: var(--fluoro);
+      border: 1px solid rgba(223, 255, 0, 0.35);
       margin-bottom: 12px;
     }
 
@@ -433,7 +445,7 @@
     }
 
     .hero p {
-      color: #9fb0c6;
+      color: var(--muted);
       font-size: 1.05rem;
     }
 
@@ -457,19 +469,23 @@
     }
 
     .cta.primary {
-      background: #ffb000;
+      background: var(--fluoro);
       color: #1b1b1b;
-      box-shadow: 0 12px 24px rgba(255, 176, 0, 0.22);
+      box-shadow: 0 12px 24px var(--fluoro-glow);
     }
 
     .cta.secondary {
       background: transparent;
-      border: 1px solid #263244;
-      color: #e7eef7;
+      border: 1px solid rgba(30, 144, 255, 0.4);
+      color: var(--text);
     }
 
     .cta:hover {
       transform: translateY(-2px);
+    }
+
+    .cta.primary:hover {
+      background: #c8f000;
     }
 
     .section {
@@ -484,8 +500,8 @@
     }
 
     .home .card {
-      background: #151c26;
-      border: 1px solid #263244;
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
       box-shadow: none;
       text-align: left;
     }
@@ -496,7 +512,7 @@
     }
 
     .home .card p {
-      color: #9fb0c6;
+      color: var(--muted);
       margin-top: 10px;
     }
 
@@ -508,8 +524,8 @@
 
     .list li {
       padding: 10px 0;
-      border-bottom: 1px solid #263244;
-      color: #9fb0c6;
+      border-bottom: 1px solid var(--panel-border);
+      color: var(--muted);
     }
 
     .list li:last-child {
@@ -517,7 +533,7 @@
     }
 
     .meta {
-      color: #9fb0c6;
+      color: var(--muted);
       font-size: 0.95rem;
     }
 
@@ -530,9 +546,9 @@
       margin-top: 20px;
       padding: 14px 18px;
       border-radius: 12px;
-      border: 1px solid rgba(45, 212, 191, 0.4);
-      background: rgba(45, 212, 191, 0.12);
-      color: #e7eef7;
+      border: 1px solid rgba(127, 255, 212, 0.4);
+      background: rgba(127, 255, 212, 0.12);
+      color: var(--text);
     }
 
     .home figure {
@@ -541,7 +557,7 @@
 
     .home figcaption {
       margin-top: 10px;
-      color: #9fb0c6;
+      color: var(--muted);
       font-size: 0.95rem;
     }
 
@@ -549,7 +565,7 @@
       padding: 32px 24px 48px;
       text-align: center;
       border-top: 1px solid #223042;
-      color: #9fb0c6;
+      color: var(--muted);
     }
 
     .home-footer .footer-links {
@@ -565,7 +581,7 @@
     }
 
     .home-footer a:hover {
-      color: #ffb000;
+      color: var(--fluoro);
     }
 
     @media (max-width: 920px) {
@@ -596,7 +612,7 @@
 
     .subpage {
       background: radial-gradient(circle at top left, #1a2230 0%, #0b0f14 55%);
-      color: #e7eef7;
+      color: var(--text);
       font-family: "Space Grotesk", "Avenir Next", sans-serif;
     }
 
@@ -618,7 +634,7 @@
       padding: 28px;
       border-radius: 20px;
       background: linear-gradient(135deg, rgba(21, 28, 38, 0.92), rgba(21, 28, 38, 0.6));
-      border: 1px solid #263244;
+      border: 1px solid var(--panel-border);
       margin-bottom: 32px;
     }
 
@@ -628,13 +644,13 @@
     }
 
     .sub-hero p {
-      color: #9fb0c6;
+      color: var(--muted);
       max-width: 760px;
     }
 
     .panel {
-      background: #151c26;
-      border: 1px solid #263244;
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
       border-radius: 16px;
       padding: 20px;
       margin-bottom: 20px;
@@ -648,7 +664,7 @@
     .panel p,
     .panel li,
     .panel dd {
-      color: #9fb0c6;
+      color: var(--muted);
     }
 
     .panel ul {
@@ -656,7 +672,7 @@
     }
 
     .panel a:hover {
-      color: #ffb000;
+      color: var(--fluoro);
     }
 
     .stripe-panel stripe-pricing-table {
@@ -693,8 +709,8 @@
     }
 
     .subpage .card {
-      background: #151c26;
-      border: 1px solid #263244;
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
       box-shadow: none;
       text-align: left;
       padding: 20px;
