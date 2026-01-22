@@ -318,3 +318,375 @@
       color: #fff; /* White text for contrast on blue background */
       border-color: #007ea7; /* Keep border color consistent on hover */
     }
+
+    /* ============================================
+       SUBPAGE STYLES (Compliance, Solutions, etc.)
+       ============================================ */
+    
+    .subpage {
+      background: #eef2f5;
+    }
+
+    /* Navigation for subpages (reuse home-nav class) */
+    .home-nav {
+      background: #0f1c33;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .home-nav .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .home-nav .brand span {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .home-nav img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .home-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .home-nav ul a {
+      color: #d9e1e8;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .home-nav ul a:hover {
+      color: #00a3cc;
+    }
+
+    .nav-cta {
+      margin-left: 1rem;
+    }
+
+    /* CTA Buttons - Modern style */
+    .cta {
+      display: inline-block;
+      padding: 0.875rem 1.75rem;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .cta.primary {
+      background: #e63946;
+      color: #fff;
+      border-color: #e63946;
+    }
+
+    .cta.primary:hover {
+      background: #f25f5c;
+      border-color: #f25f5c;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
+    }
+
+    .cta.secondary {
+      background: transparent;
+      color: #007ea7;
+      border-color: #007ea7;
+    }
+
+    .cta.secondary:hover {
+      background: #007ea7;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 126, 167, 0.3);
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      justify-content: center;
+    }
+
+    /* Subpage wrapper */
+    .sub-wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* Subpage hero section */
+    .sub-hero {
+      background: linear-gradient(135deg, #0f1c33 30%, #007ea7 100%);
+      color: #fff;
+      padding: 3rem;
+      border-radius: 12px;
+      text-align: center;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 24px rgba(15, 28, 51, 0.2);
+    }
+
+    .sub-hero .kicker {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      color: #00a3cc;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
+    .sub-hero h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .sub-hero p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Panels for subpage content */
+    .panel {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    .panel h2 {
+      color: #0f1c33;
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .panel p {
+      color: #4a4a4a;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .panel ul {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .panel ul li {
+      padding: 1rem 1rem 1rem 2.5rem;
+      position: relative;
+      color: #4a4a4a;
+      font-size: 1.05rem;
+      border-bottom: 1px solid #eef2f5;
+    }
+
+    .panel ul li:last-child {
+      border-bottom: none;
+    }
+
+    .panel ul li::before {
+      content: "✓";
+      position: absolute;
+      left: 0.5rem;
+      color: #007ea7;
+      font-weight: bold;
+    }
+
+    .panel .grid {
+      margin-top: 1rem;
+    }
+
+    .panel .card {
+      text-align: center;
+      padding: 1.75rem;
+      border: 1px solid #e8ecf0;
+    }
+
+    .panel .card strong {
+      display: block;
+      color: #0f1c33;
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .panel .card p {
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    /* Stripe pricing panel */
+    .stripe-panel {
+      background: #f8fafc;
+    }
+
+    .stripe-panel stripe-pricing-table {
+      display: block;
+      margin-top: 1.5rem;
+    }
+
+    /* Meta text (small muted) */
+    .meta {
+      color: #6b7280;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+    }
+
+    .panel a {
+      color: #007ea7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .panel a:hover {
+      color: #00a3cc;
+      text-decoration: underline;
+    }
+
+    /* Home footer for subpages */
+    .home-footer {
+      background: #0f1c33;
+      color: #d9e1e8;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .home-footer .footer-links {
+      margin-bottom: 1rem;
+    }
+
+    .home-footer .footer-links a {
+      color: #00a3cc;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .home-footer .footer-links a:hover {
+      color: #fff;
+    }
+
+    .home-footer p {
+      color: #8899a6;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    /* ============================================
+       MOBILE RESPONSIVE - Enhanced
+       ============================================ */
+    @media screen and (max-width: 768px) {
+      .home-nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+      }
+
+      .home-nav ul {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+      }
+
+      .nav-cta {
+        margin-left: 0;
+      }
+
+      .sub-wrap {
+        padding: 1rem;
+      }
+
+      .sub-hero {
+        padding: 2rem 1.5rem;
+      }
+
+      .sub-hero h1 {
+        font-size: 1.75rem;
+      }
+
+      .sub-hero p {
+        font-size: 1rem;
+      }
+
+      .panel {
+        padding: 1.5rem;
+      }
+
+      .panel h2 {
+        font-size: 1.5rem;
+      }
+
+      .cta {
+        width: 100%;
+        text-align: center;
+      }
+
+      .cta-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .home-footer .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .home-footer .footer-links a {
+        margin: 0;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header h2 {
+        font-size: 1.2rem;
+      }
+
+      .cta-button {
+        display: block;
+        margin: 0.5rem auto;
+        max-width: 280px;
+      }
+    }
