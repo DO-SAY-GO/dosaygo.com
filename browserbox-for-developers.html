@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BrowserBox for Developers: Clientless RBI with 60 FPS streaming, Puppeteer/Playwright support, and embedding APIs.">
+  <meta name="keywords" content="remote browser isolation, RBI platform, clientless RBI, puppeteer, playwright, browser automation, 60 FPS streaming, browser embedding">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <title>BrowserBox for Developers | 60 FPS RBI Platform</title>
+  <link rel=stylesheet href=style-dev.css>
+</head>
+<body class="home">
+  <nav class="home-nav">
+    <div class="brand">
+      <img src="logo.svg" alt="BrowserBox Logo">
+      <span>BrowserBox</span>
+    </div>
+    <ul>
+      <li><a href="/">Enterprise</a></li>
+      <li><a href="#get-started">Get Started</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#licensing">Licensing</a></li>
+      <li><a href="#support">Support</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="https://browserbox.io/evaluate" class="cta primary">Start Eval</a>
+    </div>
+  </nav>
+
+  <main class="home-wrap">
+    <section class="hero">
+      <div>
+        <div class="pill">Beta release live</div>
+        <div class="kicker">Remote Browser Isolation</div>
+        <h1>Clientless RBI at 60 FPS.</h1>
+        <p>BrowserBox streams a full modern browser to any client with low latency. Keep web risk off endpoints while teams browse, automate, and embed safely.</p>
+        <div class="cta-row">
+          <a href="https://browserbox.io/evaluate" class="cta primary">Start 7-Day Eval</a>
+          <a href="/commerce.html" class="cta secondary">Commercial License</a>
+          <a href="/noncommercial.html" class="cta secondary">Non-Commercial</a>
+        </div>
+        <p class="meta">Commercial product. A valid license is required for all use, including development and evaluation.</p>
+      </div>
+      <div class="card">
+        <h2>Why BrowserBox</h2>
+        <ul class="list">
+          <li><strong>Clientless RBI</strong> across modern browsers.</li>
+          <li><strong>60 FPS streaming</strong> for smooth remote sessions.</li>
+          <li><strong>Embed anywhere</strong> with a simple webview.</li>
+          <li><strong>Runs everywhere</strong> on Windows, Linux, Docker, LXC.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="feature-strip">
+      <div>60 FPS</div>
+      <div>Zero Plugins</div>
+      <div>Cross-Platform</div>
+      <div>Embed Ready</div>
+    </div>
+
+    <section class="section" id="get-started">
+      <h2>Get started in three steps</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>1. Install</strong>
+          <p class="mono">bash &lt;(curl -sSL https://browserbox.io/install.sh) install</p>
+          <p class="meta">Windows: <span class="mono">irm https://browserbox.io/install.ps1 | iex</span></p>
+        </div>
+        <div class="card">
+          <strong>2. Get a key</strong>
+          <p>Choose commercial or non-commercial licensing and receive your key by email.</p>
+        </div>
+        <div class="card">
+          <strong>3. Activate</strong>
+          <p class="mono">bbx certify YOUR_KEY</p>
+          <p class="mono">bbx setup && bbx run</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <h2>Built for real-world teams</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Isolation first</strong>
+          <p>Keep malware and phishing off endpoints with controlled browser sessions.</p>
+        </div>
+        <div class="card">
+          <strong>Performance that feels local</strong>
+          <p>Low-latency streaming with smooth 60 FPS remote browsing.</p>
+        </div>
+        <div class="card">
+          <strong>Automation-ready</strong>
+          <p>Run Puppeteer and Playwright workflows inside isolation boundaries.</p>
+        </div>
+        <div class="card">
+          <strong>Flexible deployment</strong>
+          <p>Headless servers, GPU optional, tunnels, Tor, and standard HTTPS.</p>
+        </div>
+        <div class="card">
+          <strong>Binary releases</strong>
+          <p>Signed binaries and faster update cycles for reliable installs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="licensing">
+      <h2>Commercial licensing and development</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Commercial license</strong>
+          <p>Annual licensing with support and volume options.</p>
+          <a href="/commerce.html" class="cta secondary">Buy Commercial</a>
+        </div>
+        <div class="card">
+          <strong>Non-commercial license</strong>
+          <p>For non-profits and public sector teams.</p>
+          <a href="/noncommercial.html" class="cta secondary">Get Non-Commercial</a>
+        </div>
+        <div class="card">
+          <strong>Evaluation license</strong>
+          <p>7-day trial with ID verification.</p>
+          <a href="https://browserbox.io/evaluate" class="cta primary">Start Eval</a>
+        </div>
+      </div>
+      <div class="notice">
+        BrowserBox is not open source. All usage requires a valid license, including development and evaluation. Contributions require a development license per <span class="mono">CONTRIBUTING.TXT</span>.
+      </div>
+    </section>
+
+    <section class="section" id="proof">
+      <h2>BrowserBox in action</h2>
+      <p class="meta">Full browser experience with isolated sessions, PDF viewing, DevTools, and file uploads.</p>
+      <div class="grid">
+        <div class="card">
+          <figure>
+            <img width="1392" alt="BrowserBox displays the web, like a normal browser, but enterprise secure." src="/assets/images/web-browsing.png" />
+            <figcaption>Secure web browsing.</figcaption>
+          </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <img width="1392" alt="BrowserBox displays PDFs like a normal browser." src="/assets/images/pdf-viewing.png" />
+            <figcaption>Seamless PDF viewing.</figcaption>
+          </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <img width="1392" alt="BrowserBox has DevTools like a normal browser" src="/assets/images/devtools.png" />
+            <figcaption>Full DevTools access.</figcaption>
+          </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <img width="1392" alt="BrowserBox uploads files, and does many other things, just like a normal browser." src="/assets/images/file-uploads.png" />
+            <figcaption>File uploads and full browser features.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="compliance">
+      <h2>Compliance and regulated environments</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Regulated enterprises</strong>
+          <p>RBI with controls for healthcare, finance, and government.</p>
+          <a href="/regulated-enterprise.html" class="cta secondary">Explore</a>
+        </div>
+        <div class="card">
+          <strong>NIST 800-53</strong>
+          <p>Alignment for security and audit workflows.</p>
+          <a href="/nist800-53.html" class="cta secondary">View details</a>
+        </div>
+        <div class="card">
+          <strong>HIPAA</strong>
+          <p>Policy-driven browsing with data protection options.</p>
+          <a href="/hipaa.html" class="cta secondary">Learn more</a>
+        </div>
+        <div class="card">
+          <strong>DLP</strong>
+          <p>Prevent data leakage with configurable controls.</p>
+          <a href="/dlp.html" class="cta secondary">See DLP</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="support">
+      <h2>Support and documentation</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Docs and deployment</strong>
+          <p><a href="https://github.com/BrowserBox/BrowserBox/blob/main/README.md">BrowserBox README</a> and deployment guidance.</p>
+        </div>
+        <div class="card">
+          <strong>Sales and licensing</strong>
+          <p><a href="mailto:sales@dosaygo.com">sales@dosaygo.com</a></p>
+        </div>
+        <div class="card">
+          <strong>Technical support</strong>
+          <p><a href="mailto:support@dosaygo.com">support@dosaygo.com</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="downloadnet-footer">
+      <p>
+        <a href="downloadnet.html">Looking for DownloadNet?</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="home-footer">
+    <div class="footer-links">
+      <a href="https://dosaygo.com/privacy.txt.html">Privacy Policy</a>
+      <a href="https://dosaygo.com/terms.txt.html">Terms of Service</a>
+      <a href="https://github.com/BrowserBox/BrowserBox">GitHub</a>
+      <a href="mailto:sales@dosaygo.com">sales@dosaygo.com</a>
+    </div>
+    <p>(c) 2025 DOSAYGO Corporation USA. All rights reserved.</p>
+  </footer>
+</body>
+</html>
